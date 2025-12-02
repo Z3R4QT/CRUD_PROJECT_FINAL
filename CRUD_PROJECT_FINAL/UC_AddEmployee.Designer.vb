@@ -50,10 +50,10 @@ Partial Class UC_AddEmployee
         Me.txtName.SelectionLength = 0
         Me.txtName.SelectionStart = 0
         Me.txtName.ShortcutsEnabled = True
-        Me.txtName.Size = New System.Drawing.Size(170, 48)
+        Me.txtName.Size = New System.Drawing.Size(509, 48)
         Me.txtName.TabIndex = 0
         Me.txtName.TabStop = False
-        Me.txtName.Text = "NAME"
+        Me.txtName.Text = "NAME:"
         Me.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.txtName.TrailingIcon = Nothing
         Me.txtName.UseSystemPasswordChar = False
@@ -67,7 +67,7 @@ Partial Class UC_AddEmployee
         Me.txtposition.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
         Me.txtposition.HideSelection = True
         Me.txtposition.LeadingIcon = Nothing
-        Me.txtposition.Location = New System.Drawing.Point(17, 97)
+        Me.txtposition.Location = New System.Drawing.Point(17, 86)
         Me.txtposition.MaxLength = 32767
         Me.txtposition.MouseState = MaterialSkin.MouseState.OUT
         Me.txtposition.Name = "txtposition"
@@ -79,10 +79,10 @@ Partial Class UC_AddEmployee
         Me.txtposition.SelectionLength = 0
         Me.txtposition.SelectionStart = 0
         Me.txtposition.ShortcutsEnabled = True
-        Me.txtposition.Size = New System.Drawing.Size(170, 48)
+        Me.txtposition.Size = New System.Drawing.Size(509, 48)
         Me.txtposition.TabIndex = 1
         Me.txtposition.TabStop = False
-        Me.txtposition.Text = "POSITION"
+        Me.txtposition.Text = "POSITION:"
         Me.txtposition.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.txtposition.TrailingIcon = Nothing
         Me.txtposition.UseSystemPasswordChar = False
@@ -96,7 +96,7 @@ Partial Class UC_AddEmployee
         Me.txtSalary.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
         Me.txtSalary.HideSelection = True
         Me.txtSalary.LeadingIcon = Nothing
-        Me.txtSalary.Location = New System.Drawing.Point(17, 151)
+        Me.txtSalary.Location = New System.Drawing.Point(17, 140)
         Me.txtSalary.MaxLength = 32767
         Me.txtSalary.MouseState = MaterialSkin.MouseState.OUT
         Me.txtSalary.Name = "txtSalary"
@@ -108,10 +108,10 @@ Partial Class UC_AddEmployee
         Me.txtSalary.SelectionLength = 0
         Me.txtSalary.SelectionStart = 0
         Me.txtSalary.ShortcutsEnabled = True
-        Me.txtSalary.Size = New System.Drawing.Size(170, 48)
+        Me.txtSalary.Size = New System.Drawing.Size(509, 48)
         Me.txtSalary.TabIndex = 2
         Me.txtSalary.TabStop = False
-        Me.txtSalary.Text = "SALARY"
+        Me.txtSalary.Text = "SALARY:"
         Me.txtSalary.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.txtSalary.TrailingIcon = Nothing
         Me.txtSalary.UseSystemPasswordChar = False
@@ -125,7 +125,7 @@ Partial Class UC_AddEmployee
         Me.txtDepartment.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
         Me.txtDepartment.HideSelection = True
         Me.txtDepartment.LeadingIcon = Nothing
-        Me.txtDepartment.Location = New System.Drawing.Point(17, 205)
+        Me.txtDepartment.Location = New System.Drawing.Point(17, 194)
         Me.txtDepartment.MaxLength = 32767
         Me.txtDepartment.MouseState = MaterialSkin.MouseState.OUT
         Me.txtDepartment.Name = "txtDepartment"
@@ -137,10 +137,10 @@ Partial Class UC_AddEmployee
         Me.txtDepartment.SelectionLength = 0
         Me.txtDepartment.SelectionStart = 0
         Me.txtDepartment.ShortcutsEnabled = True
-        Me.txtDepartment.Size = New System.Drawing.Size(170, 48)
+        Me.txtDepartment.Size = New System.Drawing.Size(509, 48)
         Me.txtDepartment.TabIndex = 3
         Me.txtDepartment.TabStop = False
-        Me.txtDepartment.Text = "DEPARTMENT"
+        Me.txtDepartment.Text = "DEPARTMENT:"
         Me.txtDepartment.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.txtDepartment.TrailingIcon = Nothing
         Me.txtDepartment.UseSystemPasswordChar = False
@@ -152,7 +152,7 @@ Partial Class UC_AddEmployee
         Me.btnSave.Depth = 0
         Me.btnSave.HighEmphasis = True
         Me.btnSave.Icon = Nothing
-        Me.btnSave.Location = New System.Drawing.Point(17, 262)
+        Me.btnSave.Location = New System.Drawing.Point(17, 251)
         Me.btnSave.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.btnSave.MouseState = MaterialSkin.MouseState.HOVER
         Me.btnSave.Name = "btnSave"
@@ -174,7 +174,7 @@ Partial Class UC_AddEmployee
         Me.Controls.Add(Me.txtposition)
         Me.Controls.Add(Me.txtName)
         Me.Name = "UC_AddEmployee"
-        Me.Size = New System.Drawing.Size(806, 325)
+        Me.Size = New System.Drawing.Size(708, 334)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -22,219 +22,167 @@ Partial Class UC_ManageEmployees
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MaterialMaskedTextBox1 = New MaterialSkin.Controls.MaterialMaskedTextBox()
-        Me.MaterialMaskedTextBox2 = New MaterialSkin.Controls.MaterialMaskedTextBox()
-        Me.MaterialMaskedTextBox3 = New MaterialSkin.Controls.MaterialMaskedTextBox()
-        Me.MaterialMaskedTextBox4 = New MaterialSkin.Controls.MaterialMaskedTextBox()
-        Me.MaterialButton1 = New MaterialSkin.Controls.MaterialButton()
+        Me.btnSave = New MaterialSkin.Controls.MaterialButton()
+        Me.txtDepartment = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.txtSalary = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.txtposition = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.txtName = New MaterialSkin.Controls.MaterialTextBox2()
         Me.SuspendLayout()
         '
-        'MaterialMaskedTextBox1
+        'btnSave
         '
-        Me.MaterialMaskedTextBox1.AllowPromptAsInput = True
-        Me.MaterialMaskedTextBox1.AnimateReadOnly = False
-        Me.MaterialMaskedTextBox1.AsciiOnly = False
-        Me.MaterialMaskedTextBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.MaterialMaskedTextBox1.BeepOnError = False
-        Me.MaterialMaskedTextBox1.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
-        Me.MaterialMaskedTextBox1.Depth = 0
-        Me.MaterialMaskedTextBox1.Font = New System.Drawing.Font("Roboto", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialMaskedTextBox1.HidePromptOnLeave = False
-        Me.MaterialMaskedTextBox1.HideSelection = True
-        Me.MaterialMaskedTextBox1.InsertKeyMode = System.Windows.Forms.InsertKeyMode.[Default]
-        Me.MaterialMaskedTextBox1.LeadingIcon = Nothing
-        Me.MaterialMaskedTextBox1.Location = New System.Drawing.Point(55, 72)
-        Me.MaterialMaskedTextBox1.Mask = ""
-        Me.MaterialMaskedTextBox1.MaxLength = 32767
-        Me.MaterialMaskedTextBox1.MouseState = MaterialSkin.MouseState.OUT
-        Me.MaterialMaskedTextBox1.Name = "MaterialMaskedTextBox1"
-        Me.MaterialMaskedTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MaterialMaskedTextBox1.PrefixSuffixText = Nothing
-        Me.MaterialMaskedTextBox1.PromptChar = Global.Microsoft.VisualBasic.ChrW(95)
-        Me.MaterialMaskedTextBox1.ReadOnly = False
-        Me.MaterialMaskedTextBox1.RejectInputOnFirstFailure = False
-        Me.MaterialMaskedTextBox1.ResetOnPrompt = True
-        Me.MaterialMaskedTextBox1.ResetOnSpace = True
-        Me.MaterialMaskedTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.MaterialMaskedTextBox1.SelectedText = ""
-        Me.MaterialMaskedTextBox1.SelectionLength = 0
-        Me.MaterialMaskedTextBox1.SelectionStart = 0
-        Me.MaterialMaskedTextBox1.ShortcutsEnabled = True
-        Me.MaterialMaskedTextBox1.Size = New System.Drawing.Size(227, 48)
-        Me.MaterialMaskedTextBox1.SkipLiterals = True
-        Me.MaterialMaskedTextBox1.TabIndex = 0
-        Me.MaterialMaskedTextBox1.TabStop = False
-        Me.MaterialMaskedTextBox1.Text = "MaterialMaskedTextBox1"
-        Me.MaterialMaskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.MaterialMaskedTextBox1.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
-        Me.MaterialMaskedTextBox1.TrailingIcon = Nothing
-        Me.MaterialMaskedTextBox1.UseSystemPasswordChar = False
-        Me.MaterialMaskedTextBox1.ValidatingType = Nothing
+        Me.btnSave.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnSave.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btnSave.Depth = 0
+        Me.btnSave.HighEmphasis = True
+        Me.btnSave.Icon = Nothing
+        Me.btnSave.Location = New System.Drawing.Point(18, 241)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnSave.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btnSave.Size = New System.Drawing.Size(64, 36)
+        Me.btnSave.TabIndex = 9
+        Me.btnSave.Text = "SAVE"
+        Me.btnSave.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btnSave.UseAccentColor = False
+        Me.btnSave.UseVisualStyleBackColor = True
         '
-        'MaterialMaskedTextBox2
+        'txtDepartment
         '
-        Me.MaterialMaskedTextBox2.AllowPromptAsInput = True
-        Me.MaterialMaskedTextBox2.AnimateReadOnly = False
-        Me.MaterialMaskedTextBox2.AsciiOnly = False
-        Me.MaterialMaskedTextBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.MaterialMaskedTextBox2.BeepOnError = False
-        Me.MaterialMaskedTextBox2.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
-        Me.MaterialMaskedTextBox2.Depth = 0
-        Me.MaterialMaskedTextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialMaskedTextBox2.HidePromptOnLeave = False
-        Me.MaterialMaskedTextBox2.HideSelection = True
-        Me.MaterialMaskedTextBox2.InsertKeyMode = System.Windows.Forms.InsertKeyMode.[Default]
-        Me.MaterialMaskedTextBox2.LeadingIcon = Nothing
-        Me.MaterialMaskedTextBox2.Location = New System.Drawing.Point(55, 136)
-        Me.MaterialMaskedTextBox2.Mask = ""
-        Me.MaterialMaskedTextBox2.MaxLength = 32767
-        Me.MaterialMaskedTextBox2.MouseState = MaterialSkin.MouseState.OUT
-        Me.MaterialMaskedTextBox2.Name = "MaterialMaskedTextBox2"
-        Me.MaterialMaskedTextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MaterialMaskedTextBox2.PrefixSuffixText = Nothing
-        Me.MaterialMaskedTextBox2.PromptChar = Global.Microsoft.VisualBasic.ChrW(95)
-        Me.MaterialMaskedTextBox2.ReadOnly = False
-        Me.MaterialMaskedTextBox2.RejectInputOnFirstFailure = False
-        Me.MaterialMaskedTextBox2.ResetOnPrompt = True
-        Me.MaterialMaskedTextBox2.ResetOnSpace = True
-        Me.MaterialMaskedTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.MaterialMaskedTextBox2.SelectedText = ""
-        Me.MaterialMaskedTextBox2.SelectionLength = 0
-        Me.MaterialMaskedTextBox2.SelectionStart = 0
-        Me.MaterialMaskedTextBox2.ShortcutsEnabled = True
-        Me.MaterialMaskedTextBox2.Size = New System.Drawing.Size(227, 48)
-        Me.MaterialMaskedTextBox2.SkipLiterals = True
-        Me.MaterialMaskedTextBox2.TabIndex = 1
-        Me.MaterialMaskedTextBox2.TabStop = False
-        Me.MaterialMaskedTextBox2.Text = "MaterialMaskedTextBox2"
-        Me.MaterialMaskedTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.MaterialMaskedTextBox2.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
-        Me.MaterialMaskedTextBox2.TrailingIcon = Nothing
-        Me.MaterialMaskedTextBox2.UseSystemPasswordChar = False
-        Me.MaterialMaskedTextBox2.ValidatingType = Nothing
+        Me.txtDepartment.AnimateReadOnly = False
+        Me.txtDepartment.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txtDepartment.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txtDepartment.Depth = 0
+        Me.txtDepartment.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txtDepartment.HideSelection = True
+        Me.txtDepartment.LeadingIcon = Nothing
+        Me.txtDepartment.Location = New System.Drawing.Point(18, 184)
+        Me.txtDepartment.MaxLength = 32767
+        Me.txtDepartment.MouseState = MaterialSkin.MouseState.OUT
+        Me.txtDepartment.Name = "txtDepartment"
+        Me.txtDepartment.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtDepartment.PrefixSuffixText = Nothing
+        Me.txtDepartment.ReadOnly = False
+        Me.txtDepartment.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txtDepartment.SelectedText = ""
+        Me.txtDepartment.SelectionLength = 0
+        Me.txtDepartment.SelectionStart = 0
+        Me.txtDepartment.ShortcutsEnabled = True
+        Me.txtDepartment.Size = New System.Drawing.Size(509, 48)
+        Me.txtDepartment.TabIndex = 8
+        Me.txtDepartment.TabStop = False
+        Me.txtDepartment.Text = "DEPARTMENT:"
+        Me.txtDepartment.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txtDepartment.TrailingIcon = Nothing
+        Me.txtDepartment.UseSystemPasswordChar = False
         '
-        'MaterialMaskedTextBox3
+        'txtSalary
         '
-        Me.MaterialMaskedTextBox3.AllowPromptAsInput = True
-        Me.MaterialMaskedTextBox3.AnimateReadOnly = False
-        Me.MaterialMaskedTextBox3.AsciiOnly = False
-        Me.MaterialMaskedTextBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.MaterialMaskedTextBox3.BeepOnError = False
-        Me.MaterialMaskedTextBox3.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
-        Me.MaterialMaskedTextBox3.Depth = 0
-        Me.MaterialMaskedTextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialMaskedTextBox3.HidePromptOnLeave = False
-        Me.MaterialMaskedTextBox3.HideSelection = True
-        Me.MaterialMaskedTextBox3.InsertKeyMode = System.Windows.Forms.InsertKeyMode.[Default]
-        Me.MaterialMaskedTextBox3.LeadingIcon = Nothing
-        Me.MaterialMaskedTextBox3.Location = New System.Drawing.Point(55, 203)
-        Me.MaterialMaskedTextBox3.Mask = ""
-        Me.MaterialMaskedTextBox3.MaxLength = 32767
-        Me.MaterialMaskedTextBox3.MouseState = MaterialSkin.MouseState.OUT
-        Me.MaterialMaskedTextBox3.Name = "MaterialMaskedTextBox3"
-        Me.MaterialMaskedTextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MaterialMaskedTextBox3.PrefixSuffixText = Nothing
-        Me.MaterialMaskedTextBox3.PromptChar = Global.Microsoft.VisualBasic.ChrW(95)
-        Me.MaterialMaskedTextBox3.ReadOnly = False
-        Me.MaterialMaskedTextBox3.RejectInputOnFirstFailure = False
-        Me.MaterialMaskedTextBox3.ResetOnPrompt = True
-        Me.MaterialMaskedTextBox3.ResetOnSpace = True
-        Me.MaterialMaskedTextBox3.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.MaterialMaskedTextBox3.SelectedText = ""
-        Me.MaterialMaskedTextBox3.SelectionLength = 0
-        Me.MaterialMaskedTextBox3.SelectionStart = 0
-        Me.MaterialMaskedTextBox3.ShortcutsEnabled = True
-        Me.MaterialMaskedTextBox3.Size = New System.Drawing.Size(227, 48)
-        Me.MaterialMaskedTextBox3.SkipLiterals = True
-        Me.MaterialMaskedTextBox3.TabIndex = 2
-        Me.MaterialMaskedTextBox3.TabStop = False
-        Me.MaterialMaskedTextBox3.Text = "MaterialMaskedTextBox3"
-        Me.MaterialMaskedTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.MaterialMaskedTextBox3.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
-        Me.MaterialMaskedTextBox3.TrailingIcon = Nothing
-        Me.MaterialMaskedTextBox3.UseSystemPasswordChar = False
-        Me.MaterialMaskedTextBox3.ValidatingType = Nothing
+        Me.txtSalary.AnimateReadOnly = False
+        Me.txtSalary.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txtSalary.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txtSalary.Depth = 0
+        Me.txtSalary.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txtSalary.HideSelection = True
+        Me.txtSalary.LeadingIcon = Nothing
+        Me.txtSalary.Location = New System.Drawing.Point(18, 130)
+        Me.txtSalary.MaxLength = 32767
+        Me.txtSalary.MouseState = MaterialSkin.MouseState.OUT
+        Me.txtSalary.Name = "txtSalary"
+        Me.txtSalary.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtSalary.PrefixSuffixText = Nothing
+        Me.txtSalary.ReadOnly = False
+        Me.txtSalary.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txtSalary.SelectedText = ""
+        Me.txtSalary.SelectionLength = 0
+        Me.txtSalary.SelectionStart = 0
+        Me.txtSalary.ShortcutsEnabled = True
+        Me.txtSalary.Size = New System.Drawing.Size(509, 48)
+        Me.txtSalary.TabIndex = 7
+        Me.txtSalary.TabStop = False
+        Me.txtSalary.Text = "SALARY:"
+        Me.txtSalary.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txtSalary.TrailingIcon = Nothing
+        Me.txtSalary.UseSystemPasswordChar = False
         '
-        'MaterialMaskedTextBox4
+        'txtposition
         '
-        Me.MaterialMaskedTextBox4.AllowPromptAsInput = True
-        Me.MaterialMaskedTextBox4.AnimateReadOnly = False
-        Me.MaterialMaskedTextBox4.AsciiOnly = False
-        Me.MaterialMaskedTextBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.MaterialMaskedTextBox4.BeepOnError = False
-        Me.MaterialMaskedTextBox4.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
-        Me.MaterialMaskedTextBox4.Depth = 0
-        Me.MaterialMaskedTextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialMaskedTextBox4.HidePromptOnLeave = False
-        Me.MaterialMaskedTextBox4.HideSelection = True
-        Me.MaterialMaskedTextBox4.InsertKeyMode = System.Windows.Forms.InsertKeyMode.[Default]
-        Me.MaterialMaskedTextBox4.LeadingIcon = Nothing
-        Me.MaterialMaskedTextBox4.Location = New System.Drawing.Point(55, 275)
-        Me.MaterialMaskedTextBox4.Mask = ""
-        Me.MaterialMaskedTextBox4.MaxLength = 32767
-        Me.MaterialMaskedTextBox4.MouseState = MaterialSkin.MouseState.OUT
-        Me.MaterialMaskedTextBox4.Name = "MaterialMaskedTextBox4"
-        Me.MaterialMaskedTextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MaterialMaskedTextBox4.PrefixSuffixText = Nothing
-        Me.MaterialMaskedTextBox4.PromptChar = Global.Microsoft.VisualBasic.ChrW(95)
-        Me.MaterialMaskedTextBox4.ReadOnly = False
-        Me.MaterialMaskedTextBox4.RejectInputOnFirstFailure = False
-        Me.MaterialMaskedTextBox4.ResetOnPrompt = True
-        Me.MaterialMaskedTextBox4.ResetOnSpace = True
-        Me.MaterialMaskedTextBox4.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.MaterialMaskedTextBox4.SelectedText = ""
-        Me.MaterialMaskedTextBox4.SelectionLength = 0
-        Me.MaterialMaskedTextBox4.SelectionStart = 0
-        Me.MaterialMaskedTextBox4.ShortcutsEnabled = True
-        Me.MaterialMaskedTextBox4.Size = New System.Drawing.Size(227, 48)
-        Me.MaterialMaskedTextBox4.SkipLiterals = True
-        Me.MaterialMaskedTextBox4.TabIndex = 3
-        Me.MaterialMaskedTextBox4.TabStop = False
-        Me.MaterialMaskedTextBox4.Text = "MaterialMaskedTextBox4"
-        Me.MaterialMaskedTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.MaterialMaskedTextBox4.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
-        Me.MaterialMaskedTextBox4.TrailingIcon = Nothing
-        Me.MaterialMaskedTextBox4.UseSystemPasswordChar = False
-        Me.MaterialMaskedTextBox4.ValidatingType = Nothing
+        Me.txtposition.AnimateReadOnly = False
+        Me.txtposition.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txtposition.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txtposition.Depth = 0
+        Me.txtposition.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txtposition.HideSelection = True
+        Me.txtposition.LeadingIcon = Nothing
+        Me.txtposition.Location = New System.Drawing.Point(18, 76)
+        Me.txtposition.MaxLength = 32767
+        Me.txtposition.MouseState = MaterialSkin.MouseState.OUT
+        Me.txtposition.Name = "txtposition"
+        Me.txtposition.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtposition.PrefixSuffixText = Nothing
+        Me.txtposition.ReadOnly = False
+        Me.txtposition.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txtposition.SelectedText = ""
+        Me.txtposition.SelectionLength = 0
+        Me.txtposition.SelectionStart = 0
+        Me.txtposition.ShortcutsEnabled = True
+        Me.txtposition.Size = New System.Drawing.Size(509, 48)
+        Me.txtposition.TabIndex = 6
+        Me.txtposition.TabStop = False
+        Me.txtposition.Text = "POSITION:"
+        Me.txtposition.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txtposition.TrailingIcon = Nothing
+        Me.txtposition.UseSystemPasswordChar = False
         '
-        'MaterialButton1
+        'txtName
         '
-        Me.MaterialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton1.Depth = 0
-        Me.MaterialButton1.HighEmphasis = True
-        Me.MaterialButton1.Icon = Nothing
-        Me.MaterialButton1.Location = New System.Drawing.Point(324, 287)
-        Me.MaterialButton1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton1.Name = "MaterialButton1"
-        Me.MaterialButton1.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton1.Size = New System.Drawing.Size(158, 36)
-        Me.MaterialButton1.TabIndex = 4
-        Me.MaterialButton1.Text = "MaterialButton1"
-        Me.MaterialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton1.UseAccentColor = False
-        Me.MaterialButton1.UseVisualStyleBackColor = True
+        Me.txtName.AnimateReadOnly = False
+        Me.txtName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txtName.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txtName.Depth = 0
+        Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txtName.HideSelection = True
+        Me.txtName.LeadingIcon = Nothing
+        Me.txtName.Location = New System.Drawing.Point(18, 22)
+        Me.txtName.MaxLength = 32767
+        Me.txtName.MouseState = MaterialSkin.MouseState.OUT
+        Me.txtName.Name = "txtName"
+        Me.txtName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtName.PrefixSuffixText = Nothing
+        Me.txtName.ReadOnly = False
+        Me.txtName.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txtName.SelectedText = ""
+        Me.txtName.SelectionLength = 0
+        Me.txtName.SelectionStart = 0
+        Me.txtName.ShortcutsEnabled = True
+        Me.txtName.Size = New System.Drawing.Size(509, 48)
+        Me.txtName.TabIndex = 5
+        Me.txtName.TabStop = False
+        Me.txtName.Text = "NAME:"
+        Me.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txtName.TrailingIcon = Nothing
+        Me.txtName.UseSystemPasswordChar = False
         '
         'UC_ManageEmployees
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.MaterialButton1)
-        Me.Controls.Add(Me.MaterialMaskedTextBox4)
-        Me.Controls.Add(Me.MaterialMaskedTextBox3)
-        Me.Controls.Add(Me.MaterialMaskedTextBox2)
-        Me.Controls.Add(Me.MaterialMaskedTextBox1)
+        Me.Controls.Add(Me.btnSave)
+        Me.Controls.Add(Me.txtDepartment)
+        Me.Controls.Add(Me.txtSalary)
+        Me.Controls.Add(Me.txtposition)
+        Me.Controls.Add(Me.txtName)
         Me.Name = "UC_ManageEmployees"
-        Me.Size = New System.Drawing.Size(624, 360)
+        Me.Size = New System.Drawing.Size(710, 360)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents MaterialMaskedTextBox1 As MaterialSkin.Controls.MaterialMaskedTextBox
-    Friend WithEvents MaterialMaskedTextBox2 As MaterialSkin.Controls.MaterialMaskedTextBox
-    Friend WithEvents MaterialMaskedTextBox3 As MaterialSkin.Controls.MaterialMaskedTextBox
-    Friend WithEvents MaterialMaskedTextBox4 As MaterialSkin.Controls.MaterialMaskedTextBox
-    Friend WithEvents MaterialButton1 As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents btnSave As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents txtDepartment As MaterialSkin.Controls.MaterialTextBox2
+    Friend WithEvents txtSalary As MaterialSkin.Controls.MaterialTextBox2
+    Friend WithEvents txtposition As MaterialSkin.Controls.MaterialTextBox2
+    Friend WithEvents txtName As MaterialSkin.Controls.MaterialTextBox2
 End Class
