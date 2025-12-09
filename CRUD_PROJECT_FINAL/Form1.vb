@@ -5,7 +5,6 @@ Public Class Form1
         btnAddEmployee.Enabled = False
         btnManageEmployee.Enabled = False
 
-        ' Load home UserControl by default
         LoadControl(New UC_home())
     End Sub
 
@@ -37,7 +36,6 @@ Public Class Form1
             conn.Open()
             MessageBox.Show("Connected to MySQL successfully!")
 
-            ' Enable buttons only after successful connection
             btnAddEmployee.Enabled = True
             btnManageEmployee.Enabled = True
         Catch ex As Exception

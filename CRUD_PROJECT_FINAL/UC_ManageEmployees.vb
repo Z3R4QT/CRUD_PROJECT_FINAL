@@ -142,7 +142,7 @@ Public Class UC_ManageEmployees
         End Try
     End Sub
 
-    ' ================= Delete Button (Permanent) =================
+    '================= Delete Button =================
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         If txtHiddenID.Text = "" Then
             MessageBox.Show("Select a row first!")
@@ -175,7 +175,6 @@ Public Class UC_ManageEmployees
         End Try
     End Sub
 
-    ' ================= Clear Fields =================
     Private Sub ClearFields()
         txtName.Clear()
         txtPosition.Clear()

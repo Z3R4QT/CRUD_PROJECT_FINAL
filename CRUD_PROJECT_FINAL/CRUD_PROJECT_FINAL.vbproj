@@ -185,8 +185,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DB.vb" />
-    <Compile Include="EmployeeUser.vb" />
     <Compile Include="UC_home.vb">
       <SubType>UserControl</SubType>
     </Compile>
