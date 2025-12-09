@@ -26,24 +26,26 @@ Partial Class Form1
         Me.btnExit = New MaterialSkin.Controls.MaterialButton()
         Me.btnManageEmployee = New MaterialSkin.Controls.MaterialButton()
         Me.btnAddEmployee = New MaterialSkin.Controls.MaterialButton()
-        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.btnConnect = New MaterialSkin.Controls.MaterialButton()
+        Me.btnHome = New MaterialSkin.Controls.MaterialButton()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.DarkBlue
+        Me.Panel1.Controls.Add(Me.btnHome)
+        Me.Panel1.Controls.Add(Me.btnConnect)
         Me.Panel1.Controls.Add(Me.btnExit)
-        Me.Panel1.Controls.Add(Me.btnManageEmployee)
         Me.Panel1.Controls.Add(Me.btnAddEmployee)
-        Me.Panel1.Controls.Add(Me.Panel3)
+        Me.Panel1.Controls.Add(Me.btnManageEmployee)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.ForeColor = System.Drawing.SystemColors.ActiveCaption
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(239, 449)
+        Me.Panel1.Size = New System.Drawing.Size(182, 449)
         Me.Panel1.TabIndex = 0
         '
         'btnExit
@@ -53,7 +55,7 @@ Partial Class Form1
         Me.btnExit.Depth = 0
         Me.btnExit.HighEmphasis = True
         Me.btnExit.Icon = Nothing
-        Me.btnExit.Location = New System.Drawing.Point(142, 398)
+        Me.btnExit.Location = New System.Drawing.Point(13, 407)
         Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.btnExit.MouseState = MaterialSkin.MouseState.HOVER
         Me.btnExit.Name = "btnExit"
@@ -72,7 +74,7 @@ Partial Class Form1
         Me.btnManageEmployee.Depth = 0
         Me.btnManageEmployee.HighEmphasis = True
         Me.btnManageEmployee.Icon = Nothing
-        Me.btnManageEmployee.Location = New System.Drawing.Point(45, 234)
+        Me.btnManageEmployee.Location = New System.Drawing.Point(13, 229)
         Me.btnManageEmployee.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.btnManageEmployee.MouseState = MaterialSkin.MouseState.HOVER
         Me.btnManageEmployee.Name = "btnManageEmployee"
@@ -91,7 +93,7 @@ Partial Class Form1
         Me.btnAddEmployee.Depth = 0
         Me.btnAddEmployee.HighEmphasis = True
         Me.btnAddEmployee.Icon = Nothing
-        Me.btnAddEmployee.Location = New System.Drawing.Point(45, 186)
+        Me.btnAddEmployee.Location = New System.Drawing.Point(13, 168)
         Me.btnAddEmployee.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.btnAddEmployee.MouseState = MaterialSkin.MouseState.HOVER
         Me.btnAddEmployee.Name = "btnAddEmployee"
@@ -103,32 +105,61 @@ Partial Class Form1
         Me.btnAddEmployee.UseAccentColor = False
         Me.btnAddEmployee.UseVisualStyleBackColor = True
         '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.DarkBlue
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(239, 103)
-        Me.Panel3.TabIndex = 0
-        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.DarkBlue
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(239, 0)
+        Me.Panel2.Location = New System.Drawing.Point(182, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(704, 103)
+        Me.Panel2.Size = New System.Drawing.Size(761, 103)
         Me.Panel2.TabIndex = 1
         '
         'Panel4
         '
-        Me.Panel4.BackColor = System.Drawing.SystemColors.ButtonShadow
+        Me.Panel4.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel4.Location = New System.Drawing.Point(239, 102)
+        Me.Panel4.Location = New System.Drawing.Point(182, 0)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(704, 347)
+        Me.Panel4.Size = New System.Drawing.Size(761, 449)
         Me.Panel4.TabIndex = 2
+        '
+        'btnConnect
+        '
+        Me.btnConnect.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnConnect.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btnConnect.Depth = 0
+        Me.btnConnect.HighEmphasis = True
+        Me.btnConnect.Icon = Nothing
+        Me.btnConnect.Location = New System.Drawing.Point(10, 104)
+        Me.btnConnect.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnConnect.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnConnect.Name = "btnConnect"
+        Me.btnConnect.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btnConnect.Size = New System.Drawing.Size(164, 36)
+        Me.btnConnect.TabIndex = 2
+        Me.btnConnect.Text = "Connect to MySQL"
+        Me.btnConnect.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btnConnect.UseAccentColor = False
+        Me.btnConnect.UseVisualStyleBackColor = True
+        '
+        'btnHome
+        '
+        Me.btnHome.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnHome.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btnHome.Depth = 0
+        Me.btnHome.HighEmphasis = True
+        Me.btnHome.Icon = Nothing
+        Me.btnHome.Location = New System.Drawing.Point(10, 15)
+        Me.btnHome.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btnHome.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btnHome.Name = "btnHome"
+        Me.btnHome.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btnHome.Size = New System.Drawing.Size(64, 36)
+        Me.btnHome.TabIndex = 4
+        Me.btnHome.Text = "HOME"
+        Me.btnHome.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btnHome.UseAccentColor = False
+        Me.btnHome.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -148,10 +179,11 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel4 As Panel
     Friend WithEvents btnAddEmployee As MaterialSkin.Controls.MaterialButton
     Friend WithEvents btnExit As MaterialSkin.Controls.MaterialButton
     Friend WithEvents btnManageEmployee As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents btnConnect As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents btnHome As MaterialSkin.Controls.MaterialButton
 End Class

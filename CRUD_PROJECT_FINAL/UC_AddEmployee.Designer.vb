@@ -147,6 +147,7 @@ Partial Class UC_AddEmployee
         '
         'btnSave
         '
+        Me.btnSave.AutoSize = False
         Me.btnSave.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.btnSave.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
         Me.btnSave.Depth = 0
@@ -157,9 +158,9 @@ Partial Class UC_AddEmployee
         Me.btnSave.MouseState = MaterialSkin.MouseState.HOVER
         Me.btnSave.Name = "btnSave"
         Me.btnSave.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.btnSave.Size = New System.Drawing.Size(64, 36)
+        Me.btnSave.Size = New System.Drawing.Size(121, 36)
         Me.btnSave.TabIndex = 4
-        Me.btnSave.Text = "SAVE"
+        Me.btnSave.Text = "ADD employee"
         Me.btnSave.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
         Me.btnSave.UseAccentColor = False
         Me.btnSave.UseVisualStyleBackColor = True
@@ -176,7 +177,6 @@ Partial Class UC_AddEmployee
         Me.Name = "UC_AddEmployee"
         Me.Size = New System.Drawing.Size(708, 334)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
