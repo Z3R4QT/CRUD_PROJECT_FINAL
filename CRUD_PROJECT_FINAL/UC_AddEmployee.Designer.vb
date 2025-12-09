@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class UC_AddEmployee
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,13 +20,15 @@ Partial Class UC_AddEmployee
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.txtName = New MaterialSkin.Controls.MaterialTextBox2()
         Me.txtposition = New MaterialSkin.Controls.MaterialTextBox2()
         Me.txtSalary = New MaterialSkin.Controls.MaterialTextBox2()
         Me.txtDepartment = New MaterialSkin.Controls.MaterialTextBox2()
         Me.btnSave = New MaterialSkin.Controls.MaterialButton()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'txtName
@@ -35,10 +37,11 @@ Partial Class UC_AddEmployee
         Me.txtName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.txtName.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.txtName.Depth = 0
+        Me.txtName.Dock = System.Windows.Forms.DockStyle.Top
         Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
         Me.txtName.HideSelection = True
         Me.txtName.LeadingIcon = Nothing
-        Me.txtName.Location = New System.Drawing.Point(17, 32)
+        Me.txtName.Location = New System.Drawing.Point(0, 0)
         Me.txtName.MaxLength = 32767
         Me.txtName.MouseState = MaterialSkin.MouseState.OUT
         Me.txtName.Name = "txtName"
@@ -50,7 +53,7 @@ Partial Class UC_AddEmployee
         Me.txtName.SelectionLength = 0
         Me.txtName.SelectionStart = 0
         Me.txtName.ShortcutsEnabled = True
-        Me.txtName.Size = New System.Drawing.Size(509, 48)
+        Me.txtName.Size = New System.Drawing.Size(907, 48)
         Me.txtName.TabIndex = 0
         Me.txtName.TabStop = False
         Me.txtName.Text = "NAME:"
@@ -64,10 +67,11 @@ Partial Class UC_AddEmployee
         Me.txtposition.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.txtposition.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.txtposition.Depth = 0
+        Me.txtposition.Dock = System.Windows.Forms.DockStyle.Top
         Me.txtposition.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
         Me.txtposition.HideSelection = True
         Me.txtposition.LeadingIcon = Nothing
-        Me.txtposition.Location = New System.Drawing.Point(17, 86)
+        Me.txtposition.Location = New System.Drawing.Point(0, 48)
         Me.txtposition.MaxLength = 32767
         Me.txtposition.MouseState = MaterialSkin.MouseState.OUT
         Me.txtposition.Name = "txtposition"
@@ -79,7 +83,7 @@ Partial Class UC_AddEmployee
         Me.txtposition.SelectionLength = 0
         Me.txtposition.SelectionStart = 0
         Me.txtposition.ShortcutsEnabled = True
-        Me.txtposition.Size = New System.Drawing.Size(509, 48)
+        Me.txtposition.Size = New System.Drawing.Size(907, 48)
         Me.txtposition.TabIndex = 1
         Me.txtposition.TabStop = False
         Me.txtposition.Text = "POSITION:"
@@ -93,10 +97,11 @@ Partial Class UC_AddEmployee
         Me.txtSalary.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.txtSalary.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.txtSalary.Depth = 0
+        Me.txtSalary.Dock = System.Windows.Forms.DockStyle.Top
         Me.txtSalary.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
         Me.txtSalary.HideSelection = True
         Me.txtSalary.LeadingIcon = Nothing
-        Me.txtSalary.Location = New System.Drawing.Point(17, 140)
+        Me.txtSalary.Location = New System.Drawing.Point(0, 96)
         Me.txtSalary.MaxLength = 32767
         Me.txtSalary.MouseState = MaterialSkin.MouseState.OUT
         Me.txtSalary.Name = "txtSalary"
@@ -108,7 +113,7 @@ Partial Class UC_AddEmployee
         Me.txtSalary.SelectionLength = 0
         Me.txtSalary.SelectionStart = 0
         Me.txtSalary.ShortcutsEnabled = True
-        Me.txtSalary.Size = New System.Drawing.Size(509, 48)
+        Me.txtSalary.Size = New System.Drawing.Size(907, 48)
         Me.txtSalary.TabIndex = 2
         Me.txtSalary.TabStop = False
         Me.txtSalary.Text = "SALARY:"
@@ -122,10 +127,11 @@ Partial Class UC_AddEmployee
         Me.txtDepartment.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.txtDepartment.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.txtDepartment.Depth = 0
+        Me.txtDepartment.Dock = System.Windows.Forms.DockStyle.Top
         Me.txtDepartment.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
         Me.txtDepartment.HideSelection = True
         Me.txtDepartment.LeadingIcon = Nothing
-        Me.txtDepartment.Location = New System.Drawing.Point(17, 194)
+        Me.txtDepartment.Location = New System.Drawing.Point(0, 144)
         Me.txtDepartment.MaxLength = 32767
         Me.txtDepartment.MouseState = MaterialSkin.MouseState.OUT
         Me.txtDepartment.Name = "txtDepartment"
@@ -137,7 +143,7 @@ Partial Class UC_AddEmployee
         Me.txtDepartment.SelectionLength = 0
         Me.txtDepartment.SelectionStart = 0
         Me.txtDepartment.ShortcutsEnabled = True
-        Me.txtDepartment.Size = New System.Drawing.Size(509, 48)
+        Me.txtDepartment.Size = New System.Drawing.Size(907, 48)
         Me.txtDepartment.TabIndex = 3
         Me.txtDepartment.TabStop = False
         Me.txtDepartment.Text = "DEPARTMENT:"
@@ -147,35 +153,47 @@ Partial Class UC_AddEmployee
         '
         'btnSave
         '
-        Me.btnSave.AutoSize = False
         Me.btnSave.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.btnSave.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
         Me.btnSave.Depth = 0
         Me.btnSave.HighEmphasis = True
         Me.btnSave.Icon = Nothing
-        Me.btnSave.Location = New System.Drawing.Point(17, 251)
+        Me.btnSave.Location = New System.Drawing.Point(0, 0)
         Me.btnSave.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.btnSave.MouseState = MaterialSkin.MouseState.HOVER
         Me.btnSave.Name = "btnSave"
         Me.btnSave.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.btnSave.Size = New System.Drawing.Size(121, 36)
+        Me.btnSave.Size = New System.Drawing.Size(129, 36)
         Me.btnSave.TabIndex = 4
         Me.btnSave.Text = "ADD employee"
         Me.btnSave.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
         Me.btnSave.UseAccentColor = False
         Me.btnSave.UseVisualStyleBackColor = True
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.btnSave)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 192)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(907, 100)
+        Me.Panel1.TabIndex = 5
+        '
         'UC_AddEmployee
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.btnSave)
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.txtDepartment)
         Me.Controls.Add(Me.txtSalary)
         Me.Controls.Add(Me.txtposition)
         Me.Controls.Add(Me.txtName)
         Me.Name = "UC_AddEmployee"
-        Me.Size = New System.Drawing.Size(708, 334)
+        Me.Size = New System.Drawing.Size(907, 358)
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -185,4 +203,5 @@ Partial Class UC_AddEmployee
     Friend WithEvents txtSalary As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents txtDepartment As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents btnSave As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents Panel1 As Panel
 End Class

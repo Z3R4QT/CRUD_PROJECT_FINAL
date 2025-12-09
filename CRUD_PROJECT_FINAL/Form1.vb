@@ -1,15 +1,12 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Optional: test or initialize DB connection here. Use DB.GetConnection() helper instead.
-        ' Example (commented):
-        Dim conn As New MySqlConnection("server=localhost;userid=root;password=root;database=crud_employees_db;port=3306")
-        Try
-            conn.Open()
-            conn.Close()
-        Catch ex As Exception
-            MessageBox.Show("DB connection failed: " & ex.Message)
-        End Try
+        ' Disable buttons until connection is made
+        btnAddEmployee.Enabled = False
+        btnManageEmployee.Enabled = False
+
+        ' Load home UserControl by default
+        LoadControl(New UC_home())
     End Sub
 
     Private Sub LoadControl(uc As UserControl)
@@ -35,6 +32,19 @@ Public Class Form1
     End Sub
 
     Private Sub btnConnect_Click(sender As Object, e As EventArgs) Handles btnConnect.Click
-    End Sub
-End Class
+        Dim conn As New MySqlConnection("server=localhost;userid=root;password=root;database=crud_employee_db;port=3306")
+        Try
+            conn.Open()
+            MessageBox.Show("Connected to MySQL successfully!")
 
+            ' Enable buttons only after successful connection
+            btnAddEmployee.Enabled = True
+            btnManageEmployee.Enabled = True
+        Catch ex As Exception
+            MessageBox.Show("DB connection failed: " & ex.Message)
+        Finally
+            conn.Close()
+        End Try
+    End Sub
+
+End Class

@@ -22,7 +22,7 @@ Partial Class UC_ManageEmployees
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dgvEmployees = New System.Windows.Forms.DataGridView()
         Me.btnEdit = New MaterialSkin.Controls.MaterialButton()
         Me.btnDelete = New MaterialSkin.Controls.MaterialButton()
         Me.btnUpdate = New MaterialSkin.Controls.MaterialButton()
@@ -31,26 +31,35 @@ Partial Class UC_ManageEmployees
         Me.txtSalary = New MaterialSkin.Controls.MaterialTextBox2()
         Me.txtDepartment = New MaterialSkin.Controls.MaterialTextBox2()
         Me.txtHiddenID = New System.Windows.Forms.TextBox()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvEmployees, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'DataGridView1
+        'dgvEmployees
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(446, 380)
-        Me.DataGridView1.TabIndex = 0
+        Me.dgvEmployees.AllowUserToAddRows = False
+        Me.dgvEmployees.AllowUserToDeleteRows = False
+        Me.dgvEmployees.AllowUserToResizeColumns = False
+        Me.dgvEmployees.AllowUserToResizeRows = False
+        Me.dgvEmployees.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dgvEmployees.ColumnHeadersHeight = 20
+        Me.dgvEmployees.GridColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.dgvEmployees.Location = New System.Drawing.Point(0, 0)
+        Me.dgvEmployees.Name = "dgvEmployees"
+        Me.dgvEmployees.Size = New System.Drawing.Size(472, 380)
+        Me.dgvEmployees.TabIndex = 0
         '
         'btnEdit
         '
+        Me.btnEdit.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnEdit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.btnEdit.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
         Me.btnEdit.Depth = 0
         Me.btnEdit.HighEmphasis = True
         Me.btnEdit.Icon = Nothing
-        Me.btnEdit.Location = New System.Drawing.Point(501, 76)
+        Me.btnEdit.Location = New System.Drawing.Point(564, 266)
         Me.btnEdit.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.btnEdit.MouseState = MaterialSkin.MouseState.HOVER
         Me.btnEdit.Name = "btnEdit"
@@ -64,12 +73,14 @@ Partial Class UC_ManageEmployees
         '
         'btnDelete
         '
+        Me.btnDelete.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnDelete.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.btnDelete.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
         Me.btnDelete.Depth = 0
         Me.btnDelete.HighEmphasis = True
         Me.btnDelete.Icon = Nothing
-        Me.btnDelete.Location = New System.Drawing.Point(501, 124)
+        Me.btnDelete.Location = New System.Drawing.Point(636, 266)
         Me.btnDelete.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.btnDelete.MouseState = MaterialSkin.MouseState.HOVER
         Me.btnDelete.Name = "btnDelete"
@@ -83,12 +94,14 @@ Partial Class UC_ManageEmployees
         '
         'btnUpdate
         '
+        Me.btnUpdate.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnUpdate.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.btnUpdate.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
         Me.btnUpdate.Depth = 0
         Me.btnUpdate.HighEmphasis = True
         Me.btnUpdate.Icon = Nothing
-        Me.btnUpdate.Location = New System.Drawing.Point(460, 266)
+        Me.btnUpdate.Location = New System.Drawing.Point(479, 266)
         Me.btnUpdate.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.btnUpdate.MouseState = MaterialSkin.MouseState.HOVER
         Me.btnUpdate.Name = "btnUpdate"
@@ -102,6 +115,8 @@ Partial Class UC_ManageEmployees
         '
         'txtName
         '
+        Me.txtName.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtName.AnimateReadOnly = False
         Me.txtName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.txtName.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
@@ -109,7 +124,7 @@ Partial Class UC_ManageEmployees
         Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
         Me.txtName.HideSelection = True
         Me.txtName.LeadingIcon = Nothing
-        Me.txtName.Location = New System.Drawing.Point(460, 12)
+        Me.txtName.Location = New System.Drawing.Point(489, 10)
         Me.txtName.MaxLength = 32767
         Me.txtName.MouseState = MaterialSkin.MouseState.OUT
         Me.txtName.Name = "txtName"
@@ -131,6 +146,8 @@ Partial Class UC_ManageEmployees
         '
         'txtPosition
         '
+        Me.txtPosition.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtPosition.AnimateReadOnly = False
         Me.txtPosition.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.txtPosition.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
@@ -138,7 +155,7 @@ Partial Class UC_ManageEmployees
         Me.txtPosition.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
         Me.txtPosition.HideSelection = True
         Me.txtPosition.LeadingIcon = Nothing
-        Me.txtPosition.Location = New System.Drawing.Point(460, 66)
+        Me.txtPosition.Location = New System.Drawing.Point(489, 64)
         Me.txtPosition.MaxLength = 32767
         Me.txtPosition.MouseState = MaterialSkin.MouseState.OUT
         Me.txtPosition.Name = "txtPosition"
@@ -160,6 +177,8 @@ Partial Class UC_ManageEmployees
         '
         'txtSalary
         '
+        Me.txtSalary.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtSalary.AnimateReadOnly = False
         Me.txtSalary.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.txtSalary.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
@@ -167,7 +186,7 @@ Partial Class UC_ManageEmployees
         Me.txtSalary.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
         Me.txtSalary.HideSelection = True
         Me.txtSalary.LeadingIcon = Nothing
-        Me.txtSalary.Location = New System.Drawing.Point(460, 120)
+        Me.txtSalary.Location = New System.Drawing.Point(489, 120)
         Me.txtSalary.MaxLength = 32767
         Me.txtSalary.MouseState = MaterialSkin.MouseState.OUT
         Me.txtSalary.Name = "txtSalary"
@@ -189,6 +208,8 @@ Partial Class UC_ManageEmployees
         '
         'txtDepartment
         '
+        Me.txtDepartment.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtDepartment.AnimateReadOnly = False
         Me.txtDepartment.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.txtDepartment.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
@@ -196,7 +217,7 @@ Partial Class UC_ManageEmployees
         Me.txtDepartment.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
         Me.txtDepartment.HideSelection = True
         Me.txtDepartment.LeadingIcon = Nothing
-        Me.txtDepartment.Location = New System.Drawing.Point(460, 174)
+        Me.txtDepartment.Location = New System.Drawing.Point(489, 174)
         Me.txtDepartment.MaxLength = 32767
         Me.txtDepartment.MouseState = MaterialSkin.MouseState.OUT
         Me.txtDepartment.Name = "txtDepartment"
@@ -218,7 +239,9 @@ Partial Class UC_ManageEmployees
         '
         'txtHiddenID
         '
-        Me.txtHiddenID.Location = New System.Drawing.Point(460, 228)
+        Me.txtHiddenID.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtHiddenID.Location = New System.Drawing.Point(572, 228)
         Me.txtHiddenID.Name = "txtHiddenID"
         Me.txtHiddenID.Size = New System.Drawing.Size(100, 20)
         Me.txtHiddenID.TabIndex = 8
@@ -228,6 +251,7 @@ Partial Class UC_ManageEmployees
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.Controls.Add(Me.txtHiddenID)
         Me.Controls.Add(Me.txtDepartment)
         Me.Controls.Add(Me.txtSalary)
@@ -236,16 +260,16 @@ Partial Class UC_ManageEmployees
         Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnEdit)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dgvEmployees)
         Me.Name = "UC_ManageEmployees"
-        Me.Size = New System.Drawing.Size(710, 380)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Size = New System.Drawing.Size(803, 380)
+        CType(Me.dgvEmployees, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgvEmployees As DataGridView
     Friend WithEvents btnEdit As MaterialSkin.Controls.MaterialButton
     Friend WithEvents btnDelete As MaterialSkin.Controls.MaterialButton
     Friend WithEvents btnUpdate As MaterialSkin.Controls.MaterialButton
